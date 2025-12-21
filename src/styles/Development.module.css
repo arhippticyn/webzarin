@@ -1,0 +1,150 @@
+.development {
+  display: flex;
+  padding: 40px 20px;
+  flex-direction: column;
+  max-width: 391px;
+}
+
+.developmentUp {
+  width: 300px;
+  height: 210px;
+  position: relative;
+}
+
+.developmentUp::before {
+  content: "";
+  background: url(../image/development-image/devImageMobile.png),
+    no-repeat center/cover;
+  position: absolute;
+  width: 293px;
+  height: 200px;
+}
+
+.developmentDown {
+  border: 1px solid #dbdbdb;
+  border-radius: 11px;
+  padding: 20px;
+}
+
+.developmentInfo {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 150%;
+  color: #333;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.developmentInfo span {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
+  color: #999;
+  font-family: "Roboto";
+}
+
+.developmentTitle {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 106%;
+  letter-spacing: -0.03em;
+  color: #333;
+  margin-top: 10px;
+}
+
+.developmentDescr {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 150%;
+  color: #666;
+  width: 250px;
+  font-family: "Roboto";
+  margin-top: 12px;
+}
+
+.developmentBtn {
+  border: 0.72px solid #7c4ee4;
+  border-radius: 6px;
+  padding: 8px 24px;
+  width: 128px;
+  height: 32px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 150%;
+  text-align: center;
+  color: #7c4ee4;
+  font-family: "Roboto";
+  margin-top: 20px;
+}
+
+@media (min-width: 392px) {
+  .development {
+    max-width: 999px;
+  }
+
+  .developmentDown {
+    border: none;
+  }
+
+  .developmentDownInfo {
+    position: absolute;
+    top: 1%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    top: 155%;
+    left: 40%;
+  }
+
+  .developmentUp::before {
+    display: none;
+  }
+
+  .developmentUp {
+    width: 900px;
+    height: 420px;
+  }
+
+  .developmentUp::after {
+    content: "";
+    position: absolute;
+    width: 899px;
+    height: 420px;
+    background: url(../image/development-image/devImage.png) no-repeat
+      center/cover;
+    border-radius: 20px;
+  }
+
+  .developmentTitle {
+    width: 530px;
+  }
+
+  .developmentDescr {
+    width: 560px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .development {
+    max-width: 100%;
+  }
+
+  .developmentUp {
+    width: 1330px;
+    height: 600px;
+  }
+
+  .developmentUp::after {
+    width: 1330px;
+    left: -1%;
+    height: 599px;
+    border-radius: 20px;
+  }
+
+  .developmentDownInfo {
+    left: 50%;
+    top:160%;
+  }
+}
