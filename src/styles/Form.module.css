@@ -1,0 +1,135 @@
+.SectionForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  background: #7c4ee4;
+  max-width: 391px;
+  padding-bottom: 40px;
+}
+
+.formgraph {
+  position: relative;
+  width: 173px;
+  height: 130px;
+}
+
+.formgraph::before {
+  content: "";
+  position: absolute;
+  width: 305px;
+  height: 188px;
+  background: url(../image/form-image/before.svg) no-repeat center/cover;
+  top: -55%;
+  left: -63%;
+}
+
+.formgraph::after {
+  content: "";
+  position: absolute;
+  width: 305px;
+  height: 128px;
+  background: url(/src/image/form-image/after.svg) no-repeat center / cover;
+  top: 267%;
+  left: -12%;
+}
+
+.formTitle {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 144%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #fff;
+  width: 289px;
+}
+
+.form {
+  margin-top: 15px;
+  display: flex;
+  column-gap: 5px;
+}
+
+.form input {
+  border-radius: 5px;
+  width: 211px;
+  height: 37px;
+  background: #fff;
+  border: none;
+}
+
+.form button {
+  width: 109px;
+  height: 37px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+  border: 1.32px solid #fff;
+  border-radius: 5px;
+  width: 109px;
+  height: 37px;
+  background: #7c4ee4;
+}
+
+.formDescr {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 175%;
+  text-align: center;
+  color: #bbb;
+  width: 270px;
+  margin-top: 20px;
+}
+
+@media (min-width: 392px) {
+  .SectionForm {
+    max-width: 999px;
+  }
+
+  .formgraph::before {
+    top: -46%;
+    left: -239%;
+  }
+
+  .formgraph::after {
+    top: 231%;
+    left: 162%;
+  }
+
+  .formTitle {
+    width: 540px;
+    font-size: 37px;
+  }
+
+  .formDescr {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 175%;
+    text-align: center;
+    color: #bbb;
+    width: 377px;
+  }
+}
+
+@media (min-width: 1000px) {
+    .SectionForm {
+        max-width: 100%;
+    }
+
+    .formgraph::before {
+    top: -46%;
+    left: -349%;
+  }
+
+  .formgraph::after {
+    top: 231%;
+    left: 273%;
+  }
+}

@@ -46,4 +46,5 @@ table {
 button {
 	border: none;
 	background: #fff;
+	cursor: pointer;
 }
