@@ -59,8 +59,8 @@
   .al {
     flex-direction: row;
     max-width: 999px;
-    padding: 45px 10px;
-    column-gap: 100px;
+    padding: 45px 20px;
+    column-gap: 105px;
   }
   .alLeftTitle {
     margin-top: 30px;
@@ -72,7 +72,7 @@
   }
   .alLeftDescr {
     font-weight: 400;
-    font-size: 11px;
+    font-size: 14px;
     line-height: 150%;
     color: #fff;
     width: 300px;
@@ -80,6 +80,7 @@
 
   .alLeftBtn {
     margin-top: 50px;
+    
   }
 
   .alRight img {
@@ -91,7 +92,7 @@ height: 413px;
 @media (min-width: 1000px) {
     .al {
         max-width: 100%;
-        column-gap: 505px;
+        column-gap: 633px;
         padding-left: 20px;
     }
 }

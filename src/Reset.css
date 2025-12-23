@@ -1,3 +1,15 @@
+/* =========================
+   FULL CSS RESET (Modern)
+   ========================= */
+
+/* 1. Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margins & paddings */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -7,44 +19,114 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+
+/* 3. HTML5 display-role reset */
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
+
+/* 4. Base html & body */
+html {
+  width: 100%;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
-	line-height: 1;
-	overflow-x: hidden;
+  min-height: 100%;
+  line-height: 1.4;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  overflow-x: hidden;
 }
+
+/* 5. Lists */
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
+/* 6. Quotes */
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
 }
+
+/* 7. Tables */
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 8. Images & media */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  /* max-width: 100%; */
+  height: auto;
+}
+
+/* 9. Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 10. Buttons & inputs */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 button {
-	border: none;
-	background: #fff;
-	cursor: pointer;
+  cursor: pointer;
+}
+
+/* 11. Forms */
+textarea {
+  resize: vertical;
+}
+
+/* 12. Remove autofill background (Chrome) */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+  -webkit-text-fill-color: inherit;
+}
+
+/* 13. Focus styles (accessibility-friendly) */
+:focus-visible {
+  outline: 2px solid #7c4ee4;
+  outline-offset: 2px;
+}
+
+/* 14. Hidden */
+[hidden] {
+  display: none !important;
 }

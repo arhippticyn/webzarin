@@ -125,11 +125,11 @@
 
     .formgraph::before {
     top: -46%;
-    left: -349%;
+    left: -389%;
   }
 
   .formgraph::after {
     top: 231%;
-    left: 273%;
+    left: 313%;
   }
 }

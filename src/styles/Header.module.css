@@ -1,8 +1,8 @@
 .container {
-  max-width: 1499px;
+  max-width: 100%;
   margin: 0 auto;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
 }
 
 .header {
@@ -18,8 +18,6 @@
   align-items: center;
 }
 
-.navLogo {
-}
 
 .navTitle {
   font-weight: 800;
@@ -33,12 +31,12 @@
 .navRight {
   display: flex;
   align-items: center;
-  margin-left: 295px;
+  margin-left: 285px;
 }
 
 .navRightBurger {
-  width: 44px;
-  height: 44px;
+  width: 54px;
+  height: 54px;
 }
 
 .navRightList {
@@ -55,6 +53,7 @@
   line-height: 150%;
   color: #333;
   cursor: pointer;
+  transition: color .7s ease;
 }
 
 .navRightListItem:hover {
@@ -123,7 +122,7 @@
     max-width: 100%;
   }
     .navRight {
-        margin-left: 1015px;
+        margin-left: 1145px;
     }
 
     .navTitle {
@@ -131,6 +130,6 @@
     }
 
     .navRightList {
-        column-gap: 30px;
+        column-gap: 25px;
     }
 }
